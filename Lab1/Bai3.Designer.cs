@@ -102,7 +102,7 @@ namespace Lab1
             // tbKetqua
             // 
             this.tbKetqua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbKetqua.Location = new System.Drawing.Point(15, 136);
+            this.tbKetqua.Location = new System.Drawing.Point(58, 134);
             this.tbKetqua.Name = "tbKetqua";
             this.tbKetqua.Size = new System.Drawing.Size(205, 22);
             this.tbKetqua.TabIndex = 6;

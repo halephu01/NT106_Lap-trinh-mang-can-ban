@@ -58,7 +58,7 @@ namespace Lab1
             // btThoat
             // 
             this.btThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThoat.Location = new System.Drawing.Point(559, 204);
+            this.btThoat.Location = new System.Drawing.Point(579, 191);
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(87, 35);
             this.btThoat.TabIndex = 11;
@@ -69,7 +69,7 @@ namespace Lab1
             // btXoa
             // 
             this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(559, 139);
+            this.btXoa.Location = new System.Drawing.Point(579, 126);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(87, 35);
             this.btXoa.TabIndex = 10;
@@ -80,7 +80,7 @@ namespace Lab1
             // btDoc
             // 
             this.btDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDoc.Location = new System.Drawing.Point(559, 81);
+            this.btDoc.Location = new System.Drawing.Point(579, 68);
             this.btDoc.Name = "btDoc";
             this.btDoc.Size = new System.Drawing.Size(87, 35);
             this.btDoc.TabIndex = 9;

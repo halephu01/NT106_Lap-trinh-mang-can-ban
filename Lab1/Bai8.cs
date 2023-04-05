@@ -138,5 +138,34 @@ namespace Lab1
         {
 
         }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            tbData.Text = string.Empty;
+            btTenSV.Text = string.Empty;
+            tbDiemTB.Text = string.Empty;
+            tbDiemCaoNhat.Text = string.Empty;
+            tbSoMonDau.Text = string.Empty;
+            tbXepLoai.Text = string.Empty;
+            tbDiemThapNhat.Text = string.Empty;
+            tbSoMonKhongDau.Text = string.Empty;
+            tbMon1.Text = string.Empty;
+            tbMon2.Text = string.Empty;
+            tbMon3.Text = string.Empty;
+            tbMon4.Text = string.Empty;
+            tbMon5.Text = string.Empty;
+            tbMon6.Text = string.Empty;
+            tbMon7.Text = string.Empty;
+            tbMon8.Text = string.Empty;
+            tbMon9.Text = string.Empty;
+            tbMon10.Text = string.Empty;
+            tbMon11.Text = string.Empty;
+            tbMon12.Text = string.Empty;
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

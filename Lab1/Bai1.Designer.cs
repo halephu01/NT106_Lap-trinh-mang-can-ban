@@ -37,6 +37,8 @@ namespace Lab1
             this.tbSoThuHai = new System.Windows.Forms.TextBox();
             this.tbTong = new System.Windows.Forms.TextBox();
             this.btTinh = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.btThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -106,19 +108,42 @@ namespace Lab1
             // btTinh
             // 
             this.btTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTinh.Location = new System.Drawing.Point(264, 166);
+            this.btTinh.Location = new System.Drawing.Point(143, 166);
             this.btTinh.Name = "btTinh";
-            this.btTinh.Size = new System.Drawing.Size(73, 25);
+            this.btTinh.Size = new System.Drawing.Size(77, 33);
             this.btTinh.TabIndex = 7;
             this.btTinh.Text = "Tính";
             this.btTinh.UseVisualStyleBackColor = true;
             this.btTinh.Click += new System.EventHandler(this.btTinh_Click);
+            // 
+            // btXoa
+            // 
+            this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.Location = new System.Drawing.Point(266, 165);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(76, 33);
+            this.btXoa.TabIndex = 8;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
+            // 
+            // btThoat
+            // 
+            this.btThoat.Location = new System.Drawing.Point(377, 166);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(76, 33);
+            this.btThoat.TabIndex = 9;
+            this.btThoat.Text = "Thoát";
+            this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // Bai1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 311);
+            this.Controls.Add(this.btThoat);
+            this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btTinh);
             this.Controls.Add(this.tbTong);
             this.Controls.Add(this.tbSoThuHai);
@@ -144,6 +169,8 @@ namespace Lab1
         private System.Windows.Forms.TextBox tbSoThuHai;
         private System.Windows.Forms.TextBox tbTong;
         private System.Windows.Forms.Button btTinh;
+        private System.Windows.Forms.Button btXoa;
+        private System.Windows.Forms.Button btThoat;
     }
 }
 

@@ -125,7 +125,7 @@ namespace Lab1
             // btTinh
             // 
             this.btTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTinh.Location = new System.Drawing.Point(272, 125);
+            this.btTinh.Location = new System.Drawing.Point(272, 120);
             this.btTinh.Name = "btTinh";
             this.btTinh.Size = new System.Drawing.Size(92, 31);
             this.btTinh.TabIndex = 8;

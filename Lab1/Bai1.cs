@@ -35,5 +35,17 @@ namespace Lab1
             else
                 tbTong.Text = (Int32.Parse(tbSoThuNhat.Text) + Int32.Parse(tbSoThuHai.Text)).ToString();
         }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            tbSoThuNhat.Text = string.Empty;
+            tbSoThuHai.Text = string.Empty;
+            tbTong.Text = string.Empty;
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
