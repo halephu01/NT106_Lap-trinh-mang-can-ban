@@ -45,6 +45,12 @@ namespace Lab1
                 cbLoaiXang.Items.Remove("Dầu DO");
                 cbLoaiXang.Items.Remove("RON 95-III");
             }
+
+            if(loaixe=="Xe tải 9 tấn")
+            {
+                cbLoaiXang.Items.Remove("RON 95-III");
+                cbLoaiXang.Items.Remove("ES RON 92-II");
+            }
         }
 
         private void tbKm_TextChanged(object sender, EventArgs e)
