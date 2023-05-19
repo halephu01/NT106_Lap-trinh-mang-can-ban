@@ -61,6 +61,7 @@ namespace Lab1
                 {
                     ketqua = ketqua + "Lẻ ";
                 }
+
                 if (19 < num && num < 100)
                 {
                     n = num / 10;

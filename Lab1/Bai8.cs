@@ -32,10 +32,10 @@ namespace Lab1
         private void btXuat_Click(object sender, EventArgs e)
         {
             string[] txt = tbData.Text.Split(',');
-
             bool check = true;
             string strReg = @"(/^[a-zA-Z])|(\d\.\d)|(^\d$)|(\d\d)";     
             Regex re = new Regex(strReg);
+
             if (txt.Length != 13)
             {
                 MessageBox.Show("Chưa nhập tên hoặc chưa đủ điểm!");

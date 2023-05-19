@@ -25,8 +25,10 @@ namespace Lab1
             {
                 int subnet, soMang, NetID, HostID;
                 bool check = true;
+
                 subnet = Int32.Parse(tbSubnet.Text);
                 soMang = Int32.Parse(tbSoMang.Text);
+
                 if (arr[0] > 191 && arr[0] < 224)
                 {
                     if (subnet < 24 || subnet > 32 || soMang > 2097158 || soMang < 0)
@@ -34,8 +36,8 @@ namespace Lab1
                         MessageBox.Show("Vui lòng nhập lại Subnet Mask hoặc số mạng!");
                         check = false;
                     }
-
                 }
+
                 if (arr[0] > 127 && arr[0] < 192)
                 {
                     if (subnet < 16 || subnet > 32 || soMang > 16384 || soMang < 0)
@@ -44,6 +46,7 @@ namespace Lab1
                         check = false;
                     }
                 }
+
                 if (arr[0] > 0 && arr[0] < 127)
                 {
                     if (subnet < 8 || subnet > 32 || soMang < 0 || soMang > 128)
@@ -52,6 +55,7 @@ namespace Lab1
                         check = false;
                     }
                 }
+
                 if (check)
                 {
                     int bitMuon = 0, STT = 1;
