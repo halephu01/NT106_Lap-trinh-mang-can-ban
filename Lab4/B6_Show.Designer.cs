@@ -1,6 +1,6 @@
-namespace Lab4
+﻿namespace Lab4
 {
-    partial class SourceHTML
+    partial class B6_Show
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,31 @@ namespace Lab4
         /// </summary>
         private void InitializeComponent()
         {
-            this.rtbSource = new System.Windows.Forms.RichTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // rtbSource
+            // panel1
             // 
-            this.rtbSource.Location = new System.Drawing.Point(26, 12);
-            this.rtbSource.Name = "rtbSource";
-            this.rtbSource.Size = new System.Drawing.Size(543, 404);
-            this.rtbSource.TabIndex = 0;
-            this.rtbSource.Text = "";
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(846, 619);
+            this.panel1.TabIndex = 0;
             // 
-            // SourceHTML
+            // B6_Show
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 448);
-            this.Controls.Add(this.rtbSource);
-            this.Name = "SourceHTML";
-            this.Text = "SourceHTML";
-            this.Load += new System.EventHandler(this.SourceHTML_Load);
+            this.ClientSize = new System.Drawing.Size(870, 643);
+            this.Controls.Add(this.panel1);
+            this.Name = "B6_Show";
+            this.Text = "Bai6_show";
+            this.Load += new System.EventHandler(this.B6_Show_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox rtbSource;
+        private System.Windows.Forms.Panel panel1;
     }
 }
