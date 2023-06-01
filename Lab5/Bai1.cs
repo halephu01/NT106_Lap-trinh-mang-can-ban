@@ -1,5 +1,5 @@
-﻿using MailKit.Net.Imap;
-using MailKit;
+﻿using MailKit.Net.Smtp;
+using MimeKit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,8 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-using MailKit.Net.Pop3;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace Lab5
 {
@@ -28,8 +28,27 @@ namespace Lab5
 
         private void btSend_Click(object sender, EventArgs e)
         {
-            var client = new SmtpClient();
-            client.Connect()
+            var smtpClient = new SmtpClient();
+            smtpClient.Connect("smtp.gmail.com", 465, true);
+            try
+            {
+                smtpClient.Authenticate("phuha3650@gmail.com", " fplfmqzlwutttpjf");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            var message = new MimeMessage();
+            message.From.Add(new MailboxAddress("Test test", "phuha3650@gmail.com"));
+            message.To.Add(new MailboxAddress("", tbTo.Text));
+            message.Subject = "Subject";
+            message.Body = new TextPart("plain")
+            {
+                Text = rtbBody.Text
+            };
+
+            smtpClient.Send(message);
         }
     }
 }
